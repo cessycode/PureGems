@@ -27,7 +27,7 @@ html {
     background-color: #eee;
 }
 
-.title, .about-title, .navbar-nav, .btn, .contact-me p {
+.title, .about-title, .navbar-nav, .btn, .contact {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
@@ -156,35 +156,22 @@ header {
 /**********************/
 /*       CONTACT     */
 /*********************/
-
 .contact-me {
-    color:#eee;
-    position: absolute;
-    top: 63%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    background: url(../images/mailbox.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    color: #eee;
 }
 
-.contact-me p {
-    font-size: 1.2rem;
-}
-
-.btn-contact, .btn-contact-2 {
-    position: absolute;
-    left: 15%;
-    bottom: 20%;
-    transform: translate(-50%, -50%);
-    font-family: 'Kaushan Script', cursive;
-    letter-spacing: 2px;
-}
-
-.btn-contact {
-    left: 15%;
-}
-
-.btn-contact-2 {
-    left: 25%;
-}
-
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
 
 

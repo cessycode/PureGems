@@ -1,6 +1,6 @@
 /***************************/
 /*      BASIC SET-UP       */
-/***************************/                    
+/***************************/                   
 
 body,
 html {
@@ -18,14 +18,16 @@ html {
 /***************************/
 
 .title {
+    width: 100%;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 0.6rem;
-    padding: 60px 0;
+    padding: 40px 0;
+    margin: 60px 0; 
     background-color: #eee;
 }
 
-.title, .about-title, .nav, button, .contact-me p {
+.title, .about-title, .navbar-nav, .btn, .contact-me p {
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
@@ -60,7 +62,6 @@ a:link, a:visited {
 /*       LANDING PAGE        */
 /*****************************/
 
-
 header {
     background: url(../images/landing-page.jpg);
     background-size: cover; 
@@ -69,29 +70,31 @@ header {
     height: 100vh;
 }
 
-.nav {
-    width: 80%;
-}
-
-.nav .nav-item {
+.navbar-nav .nav-item .nav-link {
+    display: inline-block;
     font-size: 1.5rem;
     font-family: 'Kaushan Script', cursive;
     letter-spacing: 2px;
-    margin-left: 40px;
-    margin-right: 40px;
     color: #fff;
 }
 
+.navbar-nav.navbar-center { 
+    position: absolute; 
+    left: 50%; 
+    transform: translatex(-50%); 
+} 
 
-.logo {
+.logo-top {
     position: relative;
     text-align: center;
     width: 100%;
+
     /* center of div */
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 /*****************************/
 /*       ABOUT PAGE          */
@@ -142,28 +145,12 @@ header {
 /*     BLOGS     */
 /*****************/
 
-.blog-title h2 {
+.card-title{
     font-family: 'Kaushan Script', cursive;
 }
 
-.blog-title p {
-    text-indent: 12%;
-}
-
-/*****************************/
-/*        SHOWCASE           */
-/*****************************/
-
-.short {
-    height: 150px;
-}
-
-.tall {
-    height: 345px;
-}
-
-.right-side {
-    margin-top: 315px;
+.card-block a{
+    color: #000;
 }
 
 /**********************/
